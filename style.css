@@ -1,0 +1,104 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+.container{
+    background: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 20px 2px hsl(212, 30%, 11%);
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+}
+.content1 h3{
+    color: #fff;
+}
+.content1 p{
+    width: 300px;
+    font-size: 16px;
+    color: hsl(178, 17%, 36%);
+}
+.content2{
+    display: flex;
+    justify-content: space-between;
+}
+.ETH{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.ETH img{
+   height: 20px;
+}
+.ETH p:first-of-type{
+    font-size: 14px;
+    color: hsl(178, 100%, 50%);
+}
+.time-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.time-left img{
+    height: 20px;
+    width: 20px;
+}
+.time-left p{
+    color: hsl(178, 17%, 36%);
+}
+span{
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    display: block;
+}
+.content3{
+    margin-top: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content3 img{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.content3 p:first-of-type{
+    color: hsl(178, 17%, 36%) ;
+}
+.content3 p:last-child{
+    color: #fff;
+}
+.content3 p:last-child:hover,.content1 h3:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.overlay{
+    height: 300px;
+    width: 300px;
+    background: hsl(178, 100%, 50%);
+    position: absolute;
+    top: 16%;
+    border-radius: 6px;
+    display: none;
+    cursor: pointer;
+}
+.overlay .gg-eye{
+    position: absolute;
+    left: 46%;
+    top: 46%;
+    opacity: 0.5;
+}
+.image:hover .overlay{
+    display: block;
+    opacity: 0.4;
+}
